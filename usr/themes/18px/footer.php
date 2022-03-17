@@ -12,7 +12,7 @@
 
     </div>
     <div class="beian-number">
-        <?php echo $this->options->beian ? "<a href='http://www.miit.gov.cn/'>{$this->options->beian}</a>" : ''; ?>
+        <?php echo $this->options->beian ? "<a href='http://beian.miit.gov.cn'>{$this->options->beian}</a>" : ''; ?>
     </div>
     <?php if ($this->options->footerOptions && in_array('copyright', $this->options->footerOptions)): ?>
         &copy; <span><?php echo $this->options->copyrightText; ?></span> <a href="<?php $this->options->siteUrl();?>"><?php $this->options->title();?></a>.
