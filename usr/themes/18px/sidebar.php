@@ -119,6 +119,8 @@
             <?php endif;?>
             <li><a href="<?php $this->options->feedUrl();?>" target="<?php $this->options->sidebarLinkOpen();?>"><?php _e('文章 RSS');?></a></li>
             <li><a href="<?php $this->options->commentsFeedUrl();?>" target="<?php $this->options->sidebarLinkOpen();?>"><?php _e('评论 RSS');?></a></li>
+            <li>距离宝宝ð出生大概还有<?php $dueDate = "2022-04-26"; $days = ceil((strtotime($dueDate) - time()) / 86400); _e($days);?>天</li>
+
         </ul>
 	</section>
     <?php endif;?>
