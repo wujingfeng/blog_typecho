@@ -278,7 +278,7 @@ class Typecho_Common
                 $code = 503;
                 $message = 'Error establishing a database connection';
             } else if ($exception instanceof Typecho_Db_Query_Exception) {
-                $message = 'Database Query Error';
+                $message = 'Database Query Error' . $exception->getTraceAsString();
             }
         } else {
             switch ($code) {
